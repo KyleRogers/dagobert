@@ -16,6 +16,7 @@ What data do I get and what does it mean (see also [Lack of Documentation](#lack
 
 In the end I DO need to know HBCI: I might not need to know the technical details of the protocol but I need to know the Geschäftsfälle (use cases) and their data structure to work with the library.
 
+
 ### Lack of developer guidance through API
 There is no guidance for developers. 
 All classes have setters and getters that can be freely manipulated.
@@ -33,6 +34,12 @@ The project introduces a business view on domain objects like accounts, IBAN, jo
 For example: What is a 'Unterkontomerkmal' aka 'subnumber' of an account? What does that mean? What can I do with it? What are valid values?
  
 Although the project claims to abstract HBCI away you need to understand the HBCI details to work with the API but there is no documentation for that.
+
+
+### Lack of multi user and server support
+The implementation is not targeted on server environments and multi user or multi account usage.
+HBCI4Java uses static methods and fields all over the place making multi-threaded usage a nightmare.
+The implementation comes with it's own static logging and in addition I had problems supporting multiple bank connections in parallel (even single threaded/single user).
  
  
  ## Why don't you use FinTecs APIs like [BanksAPI](https://banksapi.de/) or [finAPI](https://www.finapi.io/)?
