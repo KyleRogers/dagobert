@@ -43,4 +43,7 @@ The implementation comes with it's own static logging and in addition I had prob
  
  
  ## Why don't you use FinTecs APIs like [BanksAPI](https://banksapi.de/) or [finAPI](https://www.finapi.io/)?
- -- TODO
+ FinTecs would have been a viable alternative.
+ But they don't like private persons and open source or have a company-targeted pricing model.
+ I asked BanksAPI for an account but they do not allow private persons as constractors and require B2B.
+ FinAPI on the other hand has a pricing model starting with 10€ per month (120 € a year) which is too much for a freetime side-project for me.
