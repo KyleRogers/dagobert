@@ -12,7 +12,7 @@ different versions of HBCI and a developer does not need to understand the full 
 
 BUT: The projected does not abstract away HBCI and it's details on a domain/information basis.
 Which "Geschäftsfälle" (use cases) exist? Which do I need to accomplish my goal/retrieve the information necessary?
-What data do I get and what does it mean (see also [Lack of Documentation](#Lack of Documentation))
+What data do I get and what does it mean (see also [Lack of Documentation](#lack-of-documentation))
 
 In the end I DO need to know HBCI: I might not need to know the technical details of the protocol but I need to know the Geschäftsfälle (use cases) and their data structure to work with the library.
 
