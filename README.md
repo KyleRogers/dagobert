@@ -23,7 +23,10 @@ All classes have setters and getters that can be freely manipulated.
 There are no checks for parameters in place.
 If I forget one line of the example code I'll get a non-explaining NPE or ISE when executing.
 It's really hard to debug and find out WHY I need to set some parameters and what parameters and settings correlate.
-  
+
+Jobs/Requests will be created by supplying a name (String) and setting String parameters one must know.
+The result object is a generic one which needs to be casted into a result object that matches the job executed.
+Thus I need to know: All the job names, their parameter names and possible values and the correct result type of a job.   
  
 ### Lack of Documentation
 The project has no good documentation that helps getting started. 
